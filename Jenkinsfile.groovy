@@ -8,8 +8,8 @@ node {
             sh "echo container deleted"
         }
     }
-       
+
     stage("Run container " {
-        sh " ssh root${@IP}  docker run -d  --name Flaskex -p 6000:3000  kolomyya/flaskex:v2" )
+        sh " ssh root${@IP}  docker run -d  --name Flaskex -p 3300:3000  kolomyya/flaskex:v2" )
     }    
 }
