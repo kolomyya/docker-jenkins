@@ -8,7 +8,7 @@ node {
         }
     }
 
-    stage("Run container " {
+    stage("Run container ") {
         sh " ssh root@${IP}  docker run -d  --name Flaskex -p ${PORT}  kolomyya/flaskex:${VER}" 
-            }    
+     }    
 }
