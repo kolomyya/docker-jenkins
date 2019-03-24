@@ -10,6 +10,6 @@ node {
     }
 
     stage("Run container " {
-        sh " ssh root${@IP}  docker run -d  --name Flaskex -p 3300:3000  kolomyya/flaskex:v2" )
+        sh " ssh root${@IP}  docker run -d  --name Flaskex -p 3300:3000  kolomyya/flaskex:${VER}" )
     }    
 }
