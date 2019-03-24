@@ -1,6 +1,5 @@
 node {
-    properties([parameters([string(defaultValue: '127.0.0.1', description: 'Please specify IP', name: 'IP', trim: true)])])
-    satge ("Remove container") {
+ properties([parameters([string(defaultValue: '159.203.122.51', description: 'Docker Host', name: 'IP', trim: false), string(defaultValue: 'latest', description: 'Version of the App', name: 'VER', trim: false), string(defaultValue: '4000', description: 'What port would you like to run', name: 'PORT', trim: false)])])    satge ("Remove container") {
         try {
             sh "ssh root${IP} docker rm  -f flaskex"
     }
